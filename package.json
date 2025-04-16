@@ -14,12 +14,10 @@
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "express-query-int": "^1.0.1",
-    "install": "^0.13.0",
     "lodash": "^4.17.4",
     "mongoose": "^4.7.0",
     "mongoose-paginate": "^5.0.3",
     "node-restful": "^0.2.5",
-    "npm": "^10.9.2",
     "pm2": "^2.1.5"
   },
   "devDependencies": {
