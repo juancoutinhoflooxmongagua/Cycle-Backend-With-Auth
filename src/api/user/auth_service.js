@@ -38,3 +38,17 @@ const validateToken = (req, res, next) => {
         return res.status(200).send({ valid: !err })
     })
 }
+
+const signup = (req, res, next) => {
+    const name = req.body.name || ''
+    const email = req.body.email || ''
+    const password = req.body.password || ''
+    const confirmPassword = req.body.confirmPassword || ''
+    if (!email.match(emailRegex)) {
+        return res.status(400).send({ errors: ['O e-mail informado está inválido'] })
+    }
+
+    if (!password.match(passwordRegex)) {
+        return res.status(400).send({ errors: ['A senha deve ter entre 6 e 20 caracteres, incluindo letras, números e símbolos.'] })
+    }
+}
